@@ -4,12 +4,12 @@ void	reverse_bits(unsigned char b)
 	unsigned char	res;
 	int				count = 8;
 
-	while (char_len--)
+	while (count--)
 	{
-		r = (r << 1) | (b & 1);
+		res = (res << 1) | (b & 1);
 		b >>= 1;
 	}
-	return (r);
+	return (res);
 }
 
 int		main(void)
